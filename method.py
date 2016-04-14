@@ -14,12 +14,16 @@ def change(x):
 	y= 'new value'
 	print 'change to', x, y
 def defaultValue(x, y='wahaha', z= 'yi?'):
+	'''
+	Simple info
+
+	detail infos.'''
 	print x, y, z
 
+
 # hello()
-print printMax(3,5)
+# print printMax(3,5)
 # x=100; y= 100;change(x);print 'real=', x, y;
 # defaultValue(100, 100);defaultValue(100);defaultValue('fuck', z= ",too")
+print defaultValue.__doc__
 
-
-# 

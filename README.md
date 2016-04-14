@@ -5,4 +5,4 @@
 **[练手项目](https://www.zhihu.com/question/29372574)**
 
 
-# [进度](http://old.sebug.net/paper/python/ch07s07.html)
+# [进度](http://old.sebug.net/paper/python/ch10s02.html)
