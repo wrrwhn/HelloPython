@@ -11,3 +11,6 @@ print argList
 
 del argList[0]
 print argList
+
+# create list by oldList
+print [ 'new_'+i for i in argList if len(str(i))> 1]
