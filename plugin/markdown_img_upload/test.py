@@ -13,3 +13,8 @@ def uploadLocalFile():
 
 # run
 # uploadLocalFile()
+# file_path= clipboard.getFirstClipboardImage()
+# print file_path
+
+
+import win32clipboard

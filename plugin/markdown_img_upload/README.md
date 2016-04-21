@@ -4,6 +4,10 @@ sublime插件开发
 https://pillow.readthedocs.org/en/3.2.x/installation.html#windows-installation
 
 
+autohotkey
+
+
+
 save image from windows clipboard
 	https://bytes.com/topic/python/answers/166480-saving-image-file-windows-clipboard
 	http://omz-software.com/pythonista/docs/ios/clipboard.html
