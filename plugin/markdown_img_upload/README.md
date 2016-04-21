@@ -1,7 +1,12 @@
 
-http://mux.alimama.com/posts/541
+sublime插件开发
+	http://mux.alimama.com/posts/541
 https://pillow.readthedocs.org/en/3.2.x/installation.html#windows-installation
 
+
+save image from windows clipboard
+	https://bytes.com/topic/python/answers/166480-saving-image-file-windows-clipboard
+	http://omz-software.com/pythonista/docs/ios/clipboard.html
 
 # read config
 # read clipboard
@@ -12,6 +17,9 @@ https://pillow.readthedocs.org/en/3.2.x/installation.html#windows-installation
 # ~~setup keyNote~~
     # sublime-keymap User
 # save pic
+# upload image
+	http://developer.qiniu.com/code/v7/sdk/python.html
+	https://portal.qiniu.com/bucket/image
 # update to qiniu thread
 # ~~insert url-format~~
     # format
@@ -19,4 +27,3 @@ https://pillow.readthedocs.org/en/3.2.x/installation.html#windows-installation
     # self.view.sel()
 
 
-    
