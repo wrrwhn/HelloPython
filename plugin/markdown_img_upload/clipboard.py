@@ -17,9 +17,16 @@ from PIL import ImageGrab, Image
 # else:
 # 	print 'clipboard is empty'
 
-def grabFileImage():
+
+def getLocalImage():
+	'''grab clipboard[0] into the temp and return the temp file path'''
 	# read from file
-	imgPath= 'd:/desk/'
-	imageList= ['logo.png', 'python.gif', '547fdf5d61748.jpg', '545C84178E97B9EDECB16C24A077DEB0.pptx']
-	im= Image.open(imgPath+ imageList[2])
-	return im
+	# imgPath= 'd:/desk/'
+	# imageList= ['logo.png', 'python.gif', '547fdf5d61748.jpg']
+	imgPath= 'C:/Users/Yao/Desktop/'
+	imageList= ['Another.png', '006fl9Dwjw1f1txyi2j60g305o05onpd.gif', 'psb.jpg']
+	return imgPath+ imageList[2]
+
+
+def getFirstClipboardImage():
+	pass

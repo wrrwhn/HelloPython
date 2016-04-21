@@ -1,4 +1,7 @@
 
+http://mux.alimama.com/posts/541
+https://pillow.readthedocs.org/en/3.2.x/installation.html#windows-installation
+
 
 # read config
 # read clipboard
@@ -14,3 +17,6 @@
     # format
 # ~~reset cursor position~~
     # self.view.sel()
+
+
+    

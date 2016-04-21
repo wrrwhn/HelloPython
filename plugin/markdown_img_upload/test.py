@@ -1,9 +1,15 @@
 
-# pics= grab.grabclipboard()
-# pics.save('test.png', 'PNG')
-
+# import 
 import clipboard
+import upload
+import format
 
-im= clipboard.grabFileImage()
-print im.format, im.size, im.mode
-im.show()
+# method 
+def uploadLocalFile():
+	path= clipboard.getLocalImage()
+	url= upload.upload(path)
+	print format.format_markdown_img(url)
+
+
+# run
+# uploadLocalFile()
