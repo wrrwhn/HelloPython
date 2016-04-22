@@ -32,3 +32,4 @@ save image from windows clipboard
 # read config
 # sublime notice
 # support files copy
+# no install support
