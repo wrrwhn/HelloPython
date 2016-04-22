@@ -1,25 +1,8 @@
+
+# import
 from PIL import ImageGrab, Image
-from os import popen
-import clipboard as clip
 
-# # read from clipboard
-# im = ImageGrab.grabclipboard()		# return image or fileName list
-
-# if isinstance(im, Image.Image):
-# 	print 'got one image'
-# elif im:
-# 	for filename in im:
-# 		try:
-# 			print filename
-# 			im = Image.open(filename)
-# 		except IOError:
-# 			pass
-# 		else:
-# 			print 'got an image'
-# else:
-# 	print 'clipboard is empty'
-
-
+# method
 def getLocalImage():
 	'''grab clipboard[0] into the temp and return the temp file path'''
 	# read from file
@@ -29,18 +12,71 @@ def getLocalImage():
 	# imageList= ['Another.png', '006fl9Dwjw1f1txyi2j60g305o05onpd.gif', 'psb.jpg']
 	return imgPath+ imageList[2]
 
+def saveScreenShoot(file_path=None, file_name=None, file_extension=None):
+	'''save screen shot to settup/ default path'''
+	# import
+	from utils import formatCurTime
+	from os import sep
+	
+	# path/ name/ extension setup
+	if not file_path:
+		file_path= ""
+	elif not file_path.endswith(sep):
+		file_path+= sep
+	if not file_name:
+		file_name= formatCurTime()
+	if not file_extension:
+		file_extension= 'jpg'
+	file_path= str.format('{0}{1}.{2}', file_path, file_name, file_extension)
+	print 'save screen shot to ', file_path
+
+	# save  
+	im= ImageGrab.grab()
+	if isinstance(im, Image.Image):
+		im.save(file_path)
+	else:
+		print 'save screen shoot fail'
 
 def getFirstClipboardImage():
-	path_str= 'd:/desk/screen_1.bmp'
 	im= ImageGrab.grabclipboard()
 	if isinstance(im, Image.Image):
-		f= file(path_str, 'wb')
-		im.save(f)
-		f.close()
-		return path_str
+		from os import getenv, path
+		import uuid
+		from utils import mkdirIfNotExists
+		tmp_path= getenv('APPDATA')+ path.sep+ "markdown_tmp_image"+ path.sep+ str(uuid.uuid1())+ ".png"
+		if not mkdirIfNotExists(tmp_path):
+			print 'save file to %s' % tmp_path
+			return None
+
+		try:
+			im.save(tmp_path)
+		except IOError:
+			print 'clipboard/im.save fail to %s: %s' % (tmp_path, e)
+			tmp_path= None
+		finally:
+			return tmp_path
+
+	elif im:
+		index= 0
+		print im
+		for fileName in im:
+			try:
+				print '\tfilename= %s' % fileName
+				im= Image.oepn(fileName)
+				index += 1
+			except IOError:
+				pass
+			else:
+				print 'ImageList[%d].size= %s' % (index-1, im.size)
 	else:
 		return None
 
-def getClipboardText():
-	text= clip
+
+def getClipboardImageList():
 	pass
+
+
+def getClipboardText():
+	pass
+
+
