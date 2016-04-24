@@ -1,17 +1,16 @@
 
-# import system or core
+# import sublime*
 import sublime, sublime_plugin
-# from sys import path
-# path.append('C:/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/ImageUpload/utils/clipboard.py')
-# path.append('C:/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/ImageUpload/utils/format.py')
-# path.append('C:/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/ImageUpload/utils/upload.py')
-
+# import system or core
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 # import user-code
 from ImageUpload.utils.clipboard import getClipboardImage
 from ImageUpload.utils.format import format_markdown_img
 from ImageUpload.utils.upload import upload
 
-# methon
+# method
 def mkFormatShootImage():
 	tmp_path= getClipboardImage()
 	if tmp_path:

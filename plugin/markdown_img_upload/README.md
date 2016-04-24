@@ -1,4 +1,12 @@
 
+
+http://www.qttc.net/201210230.html
+http://pillow.readthedocs.org/en/3.2.x/installation.html
+http://stackoverflow.com/questions/2088304/installing-pil-python-imaging-library-in-win7-64-bits-python-2-6-4
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+
+
 sublime插件开发
 	http://mux.alimama.com/posts/541
 https://pillow.readthedocs.org/en/3.2.x/installation.html#windows-installation

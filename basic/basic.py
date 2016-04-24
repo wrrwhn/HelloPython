@@ -1,4 +1,8 @@
 
+import sys
+print sys.platform
+
+
 # object
 i= 1
 print i
@@ -57,3 +61,4 @@ print s
 friends = ['john', 'pat', 'gary', 'michael']
 for i, name in enumerate(friends):
     print "iteration {iteration} is {name}".format(iteration=i, name=name)
+

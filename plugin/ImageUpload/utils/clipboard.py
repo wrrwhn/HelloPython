@@ -1,9 +1,10 @@
 
 # import
+import sys
+import os
+# sys.path.insert(0, os.path.dirname("C:/Python27/Lib/site-packages"))
 
-from sys import path
-path.append("C:\Python27\Lib\site-package\PIL")
-from PIL import ImageGrab, Image
+from PIL import Image, ImageGrab
 
 # method
 def getLocalImage():
