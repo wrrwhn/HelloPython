@@ -4,16 +4,15 @@ import sys
 import os
 # sys.path.insert(0, os.path.dirname("C:/Python27/Lib/site-packages"))
 
-from PIL import Image, ImageGrab
 
 # method
 def getLocalImage():
 	'''grab clipboard[0] into the temp and return the temp file path'''
 	# read from file
-	imgPath= 'd:/desk/'
-	imageList= ['logo.png', 'python.gif', '547fdf5d61748.jpg']
-	# imgPath= 'C:/Users/Yao/Desktop/'
-	# imageList= ['Another.png', '006fl9Dwjw1f1txyi2j60g305o05onpd.gif', 'psb.jpg']
+	# imgPath= 'd:/desk/'
+	# imageList= ['logo.png', 'python.gif', '547fdf5d61748.jpg']
+	imgPath= 'C:/Users/Yao/Desktop/'
+	imageList= ['Another.png', '006fl9Dwjw1f1txyi2j60g305o05onpd.gif', 'psb.jpg']
 	return imgPath+ imageList[2]
 
 def saveScreenShoot(file_path=None, file_name=None, file_extension=None):
@@ -21,6 +20,7 @@ def saveScreenShoot(file_path=None, file_name=None, file_extension=None):
 	# import
 	from utils import formatCurTime
 	from os import sep
+	from PIL import Image, ImageGrab
 	
 	# path/ name/ extension setup
 	if not file_path:
@@ -44,6 +44,7 @@ def saveScreenShoot(file_path=None, file_name=None, file_extension=None):
 def getClipboardImage():
 	'''return path of the shoot / list or none'''
 	# image
+	from PIL import Image, ImageGrab
 	im= ImageGrab.grabclipboard()
 	if isinstance(im, Image.Image):
 
