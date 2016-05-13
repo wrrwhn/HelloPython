@@ -9,15 +9,15 @@ import utils
 def uploadLocalFile():
 	path= clipboard.getLocalImage()
 	url= upload.upload(path)
-	print format.format_markdown_img(url)
+	print (format.format_markdown_img(url))
 
 def uploadScreenShoot():
 	tmp_path= clipboard.getClipboardImage()
 	if tmp_path:
 		qiniu_url= upload.upload(tmp_path, is_delete= True)
-		print format.format_markdown_img(qiniu_url)
+		print (format.format_markdown_img(qiniu_url))
 	else:
-		print 'please shoot screen'
+		print ('please shoot screen')
 
 # run
 uploadScreenShoot()

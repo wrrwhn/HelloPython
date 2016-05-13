@@ -18,7 +18,7 @@ def getLocalImage():
 def saveScreenShoot(file_path=None, file_name=None, file_extension=None):
 	'''save screen shot to settup/ default path'''
 	# import
-	from utils import formatCurTime
+	from ImageUpload.utils.commonUtils import formatCurTime
 	from os import sep
 	from PIL import Image, ImageGrab
 	

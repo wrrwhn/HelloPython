@@ -1,0 +1,10 @@
+{
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}
+
+// s = sublime.load_settings("Preferences.sublime-settings")
+// current = s.get("font_size", 10)

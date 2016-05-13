@@ -24,7 +24,7 @@ def upload(local_file_path, upload_file_name=None, is_delete= True):
 		key = str(uuid.uuid1())+ file_extension
 	else:
 		tmp_basename, tmp_extension= path.splitext(upload_file_name)
-		print tmp_basename, tmp_extension
+		print(tmp_basename, tmp_extension)
 		key = tmp_basename+ file_extension
 
 	# upload

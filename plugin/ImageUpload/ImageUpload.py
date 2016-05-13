@@ -8,11 +8,14 @@ import sublime, sublime_plugin
 def mkFormatShootImage():
 	import os
 	import sys
-	# sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+	sys.path.append(r'D:\server\python\Python33\Lib\site-packages')
+	sys.path.append(r'C:\Users\Yao\AppData\Roaming\Sublime Text 3\Packages\ImageUpload')
+	sys.path.append(r'C:\Users\Yao\AppData\Roaming\Sublime Text 3\Packages\ImageUpload\utils')
 
 	from ImageUpload.utils.clipboard import saveScreenShoot
 	from ImageUpload.utils.format import format_markdown_img
 	import ImageUpload.utils.upload as uploader
+	# print("\t-->Error")
 
 	tmp_path= saveScreenShoot()
 	if tmp_path:
@@ -24,4 +27,6 @@ def mkFormatShootImage():
 # class for sublime
 class ShootImageUploadCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
-		self.view.insert(edit, self.view.sel()[0].begin(), mkFormatShootImage())
+		formatUrl= mkFormatShootImage()
+		sublime.set_clipboard(formatUrl)
+		self.view.insert(edit, self.view.sel()[0].begin(), formatUrl)
