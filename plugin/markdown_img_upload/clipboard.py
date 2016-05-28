@@ -49,12 +49,13 @@ def getClipboardImage():
 		from utils import mkdirIfNotExists
 		tmp_path= getenv('APPDATA')+ path.sep+ "markdown_tmp_image"+ path.sep+ str(uuid.uuid1())+ ".png"
 		if not mkdirIfNotExists(tmp_path):
-			print ('save file to %s' % tmp_path)
+			print ('save fail to %s' % tmp_path)
 			return None
 
 		# save & return path
 		try:
 			im.save(tmp_path)
+			# print('save file to %s succeed' % tmp_path)
 		except IOError:
 			print ('clipboard/im.save fail to %s: %s' % (tmp_path, e))
 			tmp_path= None

@@ -1,0 +1,275 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Application	.\feature\gui.py	/^class Application(tk.Frame):$/;"	c
+Auth	.\plugin\ImageUpload\utils\upload.py	/^from qiniu import Auth, put_file, etag, urlsafe_base64_encode$/;"	i
+Auth	.\plugin\markdown_img_upload\upload.py	/^from qiniu import Auth, put_file, etag, urlsafe_base64_encode$/;"	i
+CertInstallCommand	.\install\get-pip.py	/^    class CertInstallCommand(InstallCommand):$/;"	c	function:bootstrap
+Commodity	.\objectOriented\inherit.py	/^class Commodity(Object):$/;"	c
+EmailCommand	.\plugin\mail\mail.py	/^class EmailCommand(sublime_plugin.TextCommand):$/;"	c
+ExampleCommand	.\plugin\markdown_img_upload\markdown_img_upload.py	/^class ExampleCommand(sublime_plugin.TextCommand):$/;"	c
+Image	.\plugin\ImageUpload\utils\clipboard.py	/^	from PIL import Image, ImageGrab$/;"	i
+Image	.\plugin\markdown_img_upload\clipboard.py	/^from PIL import ImageGrab, Image$/;"	i
+ImageGrab	.\plugin\ImageUpload\utils\clipboard.py	/^	from PIL import Image, ImageGrab$/;"	i
+ImageGrab	.\plugin\markdown_img_upload\clipboard.py	/^from PIL import ImageGrab, Image$/;"	i
+ImageUpload	.\plugin\ImageUpload\ImageUpload.py	/^	import ImageUpload.utils.upload as uploader$/;"	i
+InstallCommand	.\install\get-pip.py	/^    from pip.commands.install import InstallCommand$/;"	i
+InstallRequirement	.\install\get-pip.py	/^    from pip.req import InstallRequirement$/;"	i
+MIMEText	.\plugin\mail\mail.py	/^from email.mime.text import MIMEText$/;"	i
+Object	.\feature\classDefaultMethod.py	/^class Object:$/;"	c
+Object	.\feature\repr.py	/^class Object:$/;"	c
+Object	.\objectOriented\inherit.py	/^class Object:$/;"	c
+Person	.\objectOriented\class.py	/^class Person:$/;"	c
+Person	.\objectOriented\inherit.py	/^class Person(Object):$/;"	c
+SETTINGS_FILE	.\plugin\mail\mail.py	/^SETTINGS_FILE = 'SublimeEmail.sublime-settings'	#加载配置的配置文件名	$/;"	v
+ShootImageUploadCommand	.\plugin\ImageUpload\ImageUpload.py	/^class ShootImageUploadCommand(sublime_plugin.TextCommand):$/;"	c
+ShortArgsException	.\feature\errorCatch.py	/^class ShortArgsException(Exception):$/;"	c
+ThreadRun	.\plugin\mail\mail.py	/^class ThreadRun(threading.Thread):$/;"	c
+__del__	.\feature\classDefaultMethod.py	/^	def __del__(self):$/;"	m	class:Object	file:
+__del__	.\objectOriented\class.py	/^	def __del__(self):$/;"	m	class:Person	file:
+__getitem__	.\feature\classDefaultMethod.py	/^	def __getitem__(self, key):$/;"	m	class:Object	file:
+__init__	.\feature\classDefaultMethod.py	/^	def __init__(self, val):$/;"	m	class:Object
+__init__	.\feature\errorCatch.py	/^	def __init__(self, length, atleast):$/;"	m	class:ShortArgsException
+__init__	.\feature\gui.py	/^	def __init__(self, master=None):$/;"	m	class:Application
+__init__	.\feature\repr.py	/^	def __init__(self, name):$/;"	m	class:Object
+__init__	.\objectOriented\class.py	/^	def __init__(self, name):$/;"	m	class:Person
+__init__	.\objectOriented\inherit.py	/^	def __init__(self, name, age):$/;"	m	class:Object
+__init__	.\objectOriented\inherit.py	/^	def __init__(self, name, age, price):$/;"	m	class:Commodity
+__init__	.\objectOriented\inherit.py	/^	def __init__(self, name, age, sex):$/;"	m	class:Person
+__init__	.\plugin\mail\mail.py	/^	def __init__(self,mailto_list,subject,context,settings):$/;"	m	class:ThreadRun
+__len__	.\feature\classDefaultMethod.py	/^	def __len__(self):$/;"	m	class:Object	file:
+__lt__	.\feature\classDefaultMethod.py	/^	def __lt__(self, other):$/;"	m	class:Object	file:
+__str__	.\feature\classDefaultMethod.py	/^	def __str__(self):$/;"	m	class:Object	file:
+__str__	.\feature\repr.py	/^	def __str__(self):$/;"	m	class:Object	file:
+_b85alphabet	.\install\get-pip.py	/^    _b85alphabet = (b"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"$/;"	v
+access_key	.\plugin\ImageUpload\utils\upload.py	/^access_key = 'DraImie8qSbwoPoyrHV38lfTnVr9aj8S487egGsC'$/;"	v
+access_key	.\plugin\markdown_img_upload\upload.py	/^access_key = 'DraImie8qSbwoPoyrHV38lfTnVr9aj8S487egGsC'$/;"	v
+app	.\feature\gui.py	/^app= Application()$/;"	v
+argList	.\structure\copyAndRef.py	/^argList= [1, 2, 3, 4]$/;"	v
+argList	.\structure\list.py	/^argList= ['arg1', 'arg2', 3]$/;"	v
+argList	.\structure\sequence.py	/^argList= [1, 2, 3, 4]$/;"	v
+argList	.\structure\stringUse.py	/^argList= ['wo', 'le', 'ge', 'qu']$/;"	v
+args	.\install\get-pip.py	/^        args = sys.argv[1:]$/;"	v	class:bootstrap.CertInstallCommand
+args	.\structure\sequence.py	/^args= 'arguments'$/;"	v
+b85decode	.\install\get-pip.py	/^    def b85decode(b):$/;"	f
+b85decode	.\install\get-pip.py	/^    from base64 import b85decode$/;"	i
+bootstrap	.\install\get-pip.py	/^def bootstrap(tmpdir=None):$/;"	f
+bucket_name	.\plugin\ImageUpload\utils\upload.py	/^bucket_name = 'image'$/;"	v
+bucket_name	.\plugin\markdown_img_upload\upload.py	/^bucket_name = 'image'$/;"	v
+cert_path	.\install\get-pip.py	/^        cert_path = os.path.join(tmpdir, "cacert.pem")$/;"	v	class:bootstrap.CertInstallCommand
+change	.\basic\method.py	/^def change(x):$/;"	f
+char	.\structure\stringUse.py	/^char=' T^T '$/;"	v
+chars	.\structure\stringUse.py	/^chars='string'$/;"	v
+clipboard	.\plugin\markdown_img_upload\test.py	/^import clipboard$/;"	i
+cmd	.\utils\backup_v1.py	/^cmd= "zip -qr '%s' %s" % (target, ' '.join(source))$/;"	v
+cmd	.\utils\backup_v2.py	/^cmd= "zip -qr '%s' %s" % (target, ' '.join(source))$/;"	v
+cmd	.\utils\backup_v3.py	/^cmd= "zip -qr '%s' %s" % (target, ' '.join(source))$/;"	v
+cmd	.\utils\backup_v4.py	/^cmd= "tar -cvzf '%s' %s -X \/usr\/bakcup\/python\/source\/doc\/*.pptx" % (target, ' '.join(source))$/;"	v
+comment	.\utils\backup_v3.py	/^comment= raw_input('Enter a comment:')$/;"	v
+comment	.\utils\backup_v4.py	/^comment= raw_input('Enter a comment:')$/;"	v
+commodity	.\objectOriented\inherit.py	/^commodity= Commodity('Kindle Paperwhite', 1, 958.00)$/;"	v
+comp_tunple	.\structure\tunple.py	/^comp_tunple= ('newObj', 100, tunple)$/;"	v
+compress	.\utils\backup_v5.py	/^def compress(source, target, name):$/;"	f
+config	.\plugin\ImageUpload\utils\upload.py	/^import qiniu.config$/;"	i
+config	.\plugin\markdown_img_upload\upload.py	/^import qiniu.config$/;"	i
+context	.\plugin\mail\mail.py	/^	context = None$/;"	v	class:ThreadRun
+copyList	.\structure\copyAndRef.py	/^copyList= argList[:]	# copy$/;"	v
+count	.\objectOriented\class.py	/^	count= 0$/;"	v	class:Person
+createWidgets	.\feature\gui.py	/^	def createWidgets(self):$/;"	m	class:Application
+def_host	.\plugin\ImageUpload\utils\upload.py	/^def_host= 'http:\/\/7xsy59.com1.z0.glb.clouddn.com\/'$/;"	v
+def_host	.\plugin\markdown_img_upload\upload.py	/^def_host= 'http:\/\/7xsy59.com1.z0.glb.clouddn.com\/'$/;"	v
+defaultValue	.\basic\method.py	/^def defaultValue(x, y='wahaha', z= 'yi?'):$/;"	f
+dic	.\structure\dict.py	/^dic={$/;"	v
+etag	.\plugin\ImageUpload\utils\upload.py	/^from qiniu import Auth, put_file, etag, urlsafe_base64_encode$/;"	i
+etag	.\plugin\markdown_img_upload\upload.py	/^from qiniu import Auth, put_file, etag, urlsafe_base64_encode$/;"	i
+f	.\feature\fileRead.py	/^f= file('output.txt')$/;"	v
+f	.\feature\fileRead.py	/^f= file('output.txt', 'w')$/;"	v
+f	.\feature\internal_os.py	/^f = file("tmp.txt", 'w')$/;"	v
+f	.\feature\objectStore.py	/^f = file(fileName)$/;"	v
+f	.\feature\objectStore.py	/^f = file(fileName, 'w')$/;"	v
+fileName	.\feature\objectStore.py	/^fileName= "object.data"$/;"	v
+format	.\plugin\markdown_img_upload\test.py	/^import format$/;"	i
+formatCurTime	.\plugin\ImageUpload\utils\clipboard.py	/^	from ImageUpload.utils.commonUtils import formatCurTime$/;"	i
+formatCurTime	.\plugin\ImageUpload\utils\commonUtils.py	/^def formatCurTime(time_format=None):$/;"	f
+formatCurTime	.\plugin\ImageUpload\utils\utils.py	/^def formatCurTime(time_format=None):$/;"	f
+formatCurTime	.\plugin\markdown_img_upload\clipboard.py	/^	from utils import formatCurTime$/;"	i
+formatCurTime	.\plugin\markdown_img_upload\utils.py	/^def formatCurTime(time_format=None):$/;"	f
+format_markdown_img	.\plugin\ImageUpload\ImageUpload.py	/^	from ImageUpload.utils.format import format_markdown_img$/;"	i
+format_markdown_img	.\plugin\ImageUpload\utils\format.py	/^def format_markdown_img(url, key=None):$/;"	f
+format_markdown_img	.\plugin\markdown_img_upload\format.py	/^def format_markdown_img(url, key=None):$/;"	f
+friends	.\basic\basic.py	/^friends = ['john', 'pat', 'gary', 'michael']$/;"	v
+getClipboardImage	.\plugin\ImageUpload\utils\clipboard.py	/^def getClipboardImage():$/;"	f
+getClipboardImage	.\plugin\markdown_img_upload\clipboard.py	/^def getClipboardImage():$/;"	f
+getClipboardText	.\plugin\ImageUpload\utils\clipboard.py	/^def getClipboardText():$/;"	f
+getClipboardText	.\plugin\markdown_img_upload\clipboard.py	/^def getClipboardText():$/;"	f
+getLocalImage	.\plugin\ImageUpload\utils\clipboard.py	/^def getLocalImage():$/;"	f
+getLocalImage	.\plugin\markdown_img_upload\clipboard.py	/^def getLocalImage():$/;"	f
+getenv	.\plugin\ImageUpload\utils\clipboard.py	/^		from os import getenv, path$/;"	i
+getenv	.\plugin\markdown_img_upload\clipboard.py	/^		from os import getenv, path$/;"	i
+grab	.\plugin\markdown_img_upload\markdown_img_upload.py	/^import ImageGrab as grab$/;"	i
+hello	.\basic\method.py	/^def hello():$/;"	f
+i	.\basic\basic.py	/^ new line'$/;"	v
+i	.\basic\basic.py	/^i= 'indent'$/;"	v
+i	.\basic\basic.py	/^i= 'one line'; print 'Multi command in one line: ',i$/;"	v
+i	.\basic\basic.py	/^i= 1$/;"	v
+i	.\feature\repr.py	/^i= []$/;"	v
+implicit_setuptools	.\install\get-pip.py	/^        implicit_setuptools = False$/;"	v	class:bootstrap.CertInstallCommand
+implicit_wheel	.\install\get-pip.py	/^        implicit_wheel = False$/;"	v	class:bootstrap.CertInstallCommand
+intList	.\feature\assert.py	/^intList= [1, 2, 3]$/;"	v
+iterbytes	.\install\get-pip.py	/^    def iterbytes(buf):$/;"	f
+iterbytes	.\install\get-pip.py	/^    iterbytes = iter$/;"	v
+line	.\feature\fileRead.py	/^	line = f.readline()$/;"	v
+mailto_list	.\plugin\mail\mail.py	/^	mailto_list = [] $/;"	v	class:ThreadRun
+main	.\install\get-pip.py	/^def main():$/;"	f
+makedirs	.\plugin\ImageUpload\utils\commonUtils.py	/^	from os import path, makedirs$/;"	i
+makedirs	.\plugin\ImageUpload\utils\utils.py	/^	from os import path, makedirs$/;"	i
+makedirs	.\plugin\markdown_img_upload\utils.py	/^	from os import path, makedirs$/;"	i
+mkFormatShootImage	.\plugin\ImageUpload\ImageUpload.py	/^def mkFormatShootImage():$/;"	f
+mkdirIfNotExists	.\plugin\ImageUpload\utils\clipboard.py	/^		from utils import mkdirIfNotExists$/;"	i
+mkdirIfNotExists	.\plugin\ImageUpload\utils\commonUtils.py	/^def mkdirIfNotExists(file_path):$/;"	f
+mkdirIfNotExists	.\plugin\ImageUpload\utils\utils.py	/^def mkdirIfNotExists(file_path):$/;"	f
+mkdirIfNotExists	.\plugin\markdown_img_upload\clipboard.py	/^		from utils import mkdirIfNotExists$/;"	i
+mkdirIfNotExists	.\plugin\markdown_img_upload\utils.py	/^def mkdirIfNotExists(file_path):$/;"	f
+module_user	.\module\module_import_user.py	/^import module_user$/;"	i
+noqa	.\install\get-pip.py	/^            import setuptools  # noqa$/;"	i
+noqa	.\install\get-pip.py	/^            import wheel  # noqa$/;"	i
+now	.\utils\backup_v2.py	/^now = time.strftime('%H%M%S')$/;"	v
+now	.\utils\backup_v3.py	/^now = time.strftime('%H%M%S')$/;"	v
+now	.\utils\backup_v4.py	/^now = time.strftime('%H%M%S')$/;"	v
+now	.\utils\backup_v5.py	/^now = time.strftime('%H%M%S')$/;"	v
+obj	.\feature\classDefaultMethod.py	/^obj= Object(10)$/;"	v
+obj	.\feature\repr.py	/^obj= Object('yao')$/;"	v
+objList	.\feature\objectStore.py	/^objList= ['mouse', 'keyboard', 'phone']$/;"	v
+objList	.\objectOriented\inherit.py	/^objList= [person, commodity]$/;"	v
+option	.\feature\internal_sys.py	/^	option= sys.argv[1][2:]$/;"	v
+os	.\feature\internal_os.py	/^import os$/;"	i
+os	.\install\get-pip.py	/^import os.path$/;"	i
+os	.\plugin\ImageUpload\ImageUpload.py	/^	import os$/;"	i
+os	.\plugin\ImageUpload\utils\clipboard.py	/^import os$/;"	i
+os	.\utils\backup_v1.py	/^import os$/;"	i
+os	.\utils\backup_v2.py	/^import os$/;"	i
+os	.\utils\backup_v3.py	/^import os$/;"	i
+os	.\utils\backup_v4.py	/^import os$/;"	i
+os	.\utils\backup_v5.py	/^import os$/;"	i
+other	.\feature\classDefaultMethod.py	/^other= Object(9)$/;"	v
+p	.\feature\objectStore.py	/^import cPickle as p 	# rename$/;"	i
+p1	.\objectOriented\class.py	/^p1= Person('Yao')$/;"	v
+p2	.\objectOriented\class.py	/^p2= Person('luo')$/;"	v
+parse_args	.\install\get-pip.py	/^        def parse_args(self, args):$/;"	m	class:bootstrap.CertInstallCommand
+path	.\install\get-pip.py	/^import os.path$/;"	i
+path	.\plugin\ImageUpload\utils\clipboard.py	/^		from os import getenv, path$/;"	i
+path	.\plugin\ImageUpload\utils\commonUtils.py	/^	from os import path, makedirs$/;"	i
+path	.\plugin\ImageUpload\utils\format.py	/^from os import path$/;"	i
+path	.\plugin\ImageUpload\utils\upload.py	/^from os import path, remove$/;"	i
+path	.\plugin\ImageUpload\utils\utils.py	/^	from os import path, makedirs$/;"	i
+path	.\plugin\markdown_img_upload\clipboard.py	/^		from os import getenv, path$/;"	i
+path	.\plugin\markdown_img_upload\format.py	/^from os import path$/;"	i
+path	.\plugin\markdown_img_upload\upload.py	/^from os import path, remove$/;"	i
+path	.\plugin\markdown_img_upload\utils.py	/^	from os import path, makedirs$/;"	i
+person	.\objectOriented\inherit.py	/^person= Person('Yao', 27, 'man')$/;"	v
+pip	.\install\get-pip.py	/^    import pip$/;"	i
+pkgutil	.\install\get-pip.py	/^import pkgutil$/;"	i
+printMax	.\basic\method.py	/^def printMax(a, b):$/;"	f
+psettings	.\plugin\mail\mail.py	/^	psettings = None$/;"	v	class:ThreadRun
+put_file	.\plugin\ImageUpload\utils\upload.py	/^from qiniu import Auth, put_file, etag, urlsafe_base64_encode$/;"	i
+put_file	.\plugin\markdown_img_upload\upload.py	/^from qiniu import Auth, put_file, etag, urlsafe_base64_encode$/;"	i
+qiniu	.\plugin\ImageUpload\utils\upload.py	/^import qiniu.config$/;"	i
+qiniu	.\plugin\markdown_img_upload\upload.py	/^import qiniu.config$/;"	i
+read	.\feature\internal_sys.py	/^def read(fileName):$/;"	f
+refList	.\structure\copyAndRef.py	/^refList= argList		# ref$/;"	v
+remove	.\plugin\ImageUpload\utils\upload.py	/^from os import path, remove$/;"	i
+remove	.\plugin\markdown_img_upload\upload.py	/^from os import path, remove$/;"	i
+rename	.\feature\objectStore.py	/^import cPickle as p 	# rename$/;"	i
+run	.\plugin\ImageUpload\ImageUpload.py	/^	def run(self, edit):$/;"	m	class:ShootImageUploadCommand
+run	.\plugin\mail\mail.py	/^	def run(self):$/;"	m	class:ThreadRun
+run	.\plugin\mail\mail.py	/^	def run(self, edit):$/;"	m	class:EmailCommand
+run	.\plugin\markdown_img_upload\markdown_img_upload.py	/^	def run(self, edit):$/;"	m	class:ExampleCommand
+s	.\basic\basic.py	/^s= ''$/;"	v
+s	.\feature\errorCatch.py	/^	s = raw_input('Input:')$/;"	v
+saveScreenShoot	.\plugin\ImageUpload\ImageUpload.py	/^	from ImageUpload.utils.clipboard import saveScreenShoot$/;"	i
+saveScreenShoot	.\plugin\ImageUpload\utils\clipboard.py	/^def saveScreenShoot(file_path=None, file_name=None, file_extension=None):$/;"	f
+saveScreenShoot	.\plugin\markdown_img_upload\clipboard.py	/^def saveScreenShoot(file_path=None, file_name=None, file_extension=None):$/;"	f
+sayHello	.\objectOriented\class.py	/^	def sayHello(self):$/;"	m	class:Person
+sayHi	.\module\module_from_import_user.py	/^from module_user import sayHi, version$/;"	i
+sayHi	.\module\module_user.py	/^def sayHi():$/;"	f
+secret_key	.\plugin\ImageUpload\utils\upload.py	/^secret_key = '62PYqPKVBwFIHvObxdrzeRcqB7Ep_ufpqTXLZ_8b'$/;"	v
+secret_key	.\plugin\markdown_img_upload\upload.py	/^secret_key = '62PYqPKVBwFIHvObxdrzeRcqB7Ep_ufpqTXLZ_8b'$/;"	v
+send_mail	.\plugin\mail\mail.py	/^def send_mail(to_list, sub, context,user_name,mail_addr,mail_host,mail_pass): $/;"	f
+sep	.\plugin\ImageUpload\utils\clipboard.py	/^	from os import sep$/;"	i
+sep	.\plugin\markdown_img_upload\clipboard.py	/^	from os import sep$/;"	i
+sequence	.\feature\lambda.py	/^sequence= [2, 18, 9, 22, 17, 24, 8, 12, 27]$/;"	v
+setuptools	.\install\get-pip.py	/^            import setuptools  # noqa$/;"	i
+shutil	.\install\get-pip.py	/^import shutil$/;"	i
+smtp	.\plugin\mail\mail.py	/^import smtplib 					#这是smtp邮件发送库$/;"	i
+smtplib	.\plugin\mail\mail.py	/^import smtplib 					#这是smtp邮件发送库$/;"	i
+source	.\utils\backup_v1.py	/^source = ['\/usr\/bakcup\/python\/source\/image']$/;"	v
+source	.\utils\backup_v2.py	/^source = ['\/usr\/bakcup\/python\/source\/image', '\/usr\/bakcup\/python\/source\/doc']$/;"	v
+source	.\utils\backup_v3.py	/^source = ['\/usr\/bakcup\/python\/source\/image', '\/usr\/bakcup\/python\/source\/doc']$/;"	v
+source	.\utils\backup_v4.py	/^source = ['\/usr\/bakcup\/python\/source\/image', '\/usr\/bakcup\/python\/source\/doc']$/;"	v
+source	.\utils\backup_v5.py	/^source = ['E:\/temp\/test\/source\/img', 'E:\/temp\/test\/source\/doc']$/;"	v
+struct	.\install\get-pip.py	/^import struct$/;"	i
+subject	.\plugin\mail\mail.py	/^	subject = None $/;"	v	class:ThreadRun
+sublime	.\plugin\ImageUpload\ImageUpload.py	/^import sublime, sublime_plugin$/;"	i
+sublime	.\plugin\mail\mail.py	/^import sublime, sublime_plugin 	#这是sublime插件必须要引入的两个库$/;"	i
+sublime	.\plugin\markdown_img_upload\markdown_img_upload.py	/^import sublime, sublime_plugin$/;"	i
+sublime_plugin	.\plugin\ImageUpload\ImageUpload.py	/^import sublime, sublime_plugin$/;"	i
+sublime_plugin	.\plugin\mail\mail.py	/^import sublime, sublime_plugin 	#这是sublime插件必须要引入的两个库$/;"	i
+sublime_plugin	.\plugin\markdown_img_upload\markdown_img_upload.py	/^import sublime, sublime_plugin$/;"	i
+sum	.\feature\varargs.py	/^def sum(*args):$/;"	f
+sys	.\basic\basic.py	/^import sys$/;"	i
+sys	.\feature\errorCatch.py	/^import sys$/;"	i
+sys	.\feature\internal_sys.py	/^import sys$/;"	i
+sys	.\install\get-pip.py	/^import sys$/;"	i
+sys	.\module\module_dir.py	/^import sys$/;"	i
+sys	.\module\module_sys.py	/^import sys$/;"	i
+sys	.\plugin\ImageUpload\ImageUpload.py	/^	import sys$/;"	i
+sys	.\plugin\ImageUpload\utils\clipboard.py	/^import sys$/;"	i
+sys	.\test\test.py	/^import sys$/;"	i
+target	.\utils\backup_v1.py	/^target= target_dir+ time.strftime('%Y%m%d%H%M%S')+ '.zip'$/;"	v
+target	.\utils\backup_v2.py	/^target= target_dir+ time.strftime('%Y%m%d')$/;"	v
+target	.\utils\backup_v3.py	/^target= target_dir+ time.strftime('%Y%m%d')$/;"	v
+target	.\utils\backup_v4.py	/^target= target_dir+ time.strftime('%Y%m%d')$/;"	v
+target	.\utils\backup_v5.py	/^target= target_dir+ time.strftime('%Y%m%d')$/;"	v
+target_dir	.\utils\backup_v1.py	/^target_dir = '\/usr\/bakcup\/python\/target\/'$/;"	v
+target_dir	.\utils\backup_v2.py	/^target_dir = '\/usr\/bakcup\/python\/target\/'$/;"	v
+target_dir	.\utils\backup_v3.py	/^target_dir = '\/usr\/bakcup\/python\/target\/'$/;"	v
+target_dir	.\utils\backup_v4.py	/^target_dir = '\/usr\/bakcup\/python\/target\/'$/;"	v
+target_dir	.\utils\backup_v5.py	/^target_dir = 'E:\/temp\/test\/target\/'$/;"	v
+tempfile	.\install\get-pip.py	/^import tempfile$/;"	i
+test	.\plugin\ImageUpload\utils\commonUtils.py	/^def test():$/;"	f
+threading	.\plugin\mail\mail.py	/^import threading $/;"	i
+time	.\basic\basic.py	/^time=0$/;"	v
+time	.\plugin\ImageUpload\utils\commonUtils.py	/^	import time$/;"	i
+time	.\plugin\ImageUpload\utils\utils.py	/^	import time$/;"	i
+time	.\plugin\markdown_img_upload\utils.py	/^	import time$/;"	i
+time	.\utils\backup_v1.py	/^import time$/;"	i
+time	.\utils\backup_v2.py	/^import time$/;"	i
+time	.\utils\backup_v3.py	/^import time$/;"	i
+time	.\utils\backup_v4.py	/^import time$/;"	i
+time	.\utils\backup_v5.py	/^import time$/;"	i
+tk	.\feature\gui.py	/^import Tkinter as tk$/;"	i
+toString	.\objectOriented\inherit.py	/^	def toString(self):$/;"	m	class:Object
+toString	.\objectOriented\inherit.py	/^	def toString(self):$/;"	m	class:Person
+traversePath	.\utils\backup_v5.py	/^def traversePath(source):$/;"	f
+tunple	.\structure\tunple.py	/^tunple= ('obj', 1)$/;"	v
+upload	.\plugin\ImageUpload\utils\upload.py	/^def upload(local_file_path, upload_file_name=None, is_delete= True):$/;"	f
+upload	.\plugin\markdown_img_upload\test.py	/^import upload$/;"	i
+upload	.\plugin\markdown_img_upload\upload.py	/^def upload(local_file_path, upload_file_name=None, is_delete= True):$/;"	f
+uploadLocalFile	.\plugin\markdown_img_upload\test.py	/^def uploadLocalFile():$/;"	f
+uploadScreenShoot	.\plugin\markdown_img_upload\test.py	/^def uploadScreenShoot():$/;"	f
+uploader	.\plugin\ImageUpload\ImageUpload.py	/^	import ImageUpload.utils.upload as uploader$/;"	i
+urlsafe_base64_encode	.\plugin\ImageUpload\utils\upload.py	/^from qiniu import Auth, put_file, etag, urlsafe_base64_encode$/;"	i
+urlsafe_base64_encode	.\plugin\markdown_img_upload\upload.py	/^from qiniu import Auth, put_file, etag, urlsafe_base64_encode$/;"	i
+utils	.\plugin\ImageUpload\ImageUpload.py	/^	import ImageUpload.utils.upload as uploader$/;"	i
+utils	.\plugin\markdown_img_upload\test.py	/^import utils$/;"	i
+uuid	.\plugin\ImageUpload\utils\clipboard.py	/^		import uuid$/;"	i
+uuid	.\plugin\ImageUpload\utils\upload.py	/^import uuid$/;"	i
+uuid	.\plugin\markdown_img_upload\clipboard.py	/^		import uuid$/;"	i
+uuid	.\plugin\markdown_img_upload\upload.py	/^import uuid$/;"	i
+version	.\module\module_from_import_user.py	/^from module_user import sayHi, version$/;"	i
+version	.\module\module_user.py	/^version= '0.1'/;"	v
+wheel	.\install\get-pip.py	/^            import wheel  # noqa$/;"	i
+zipfile	.\utils\backup_v5.py	/^import zipfile$/;"	i
