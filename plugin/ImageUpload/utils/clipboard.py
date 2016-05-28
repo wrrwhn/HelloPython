@@ -37,7 +37,7 @@ def saveScreenShoot(file_path=None, file_name=None, file_extension=None):
 	im= ImageGrab.grab()
 	if isinstance(im, Image.Image):
 		im.save(file_path)
-		return True
+		return file_path
 	else:
 		return None
 
@@ -51,7 +51,7 @@ def getClipboardImage():
 		# tmp save
 		from os import getenv, path
 		import uuid
-		from utils import mkdirIfNotExists
+		from ImageUpload.utils.commonUtils import mkdirIfNotExists
 		tmp_path= getenv('APPDATA')+ path.sep+ "markdown_tmp_image"+ path.sep+ str(uuid.uuid1())+ ".png"
 		if not mkdirIfNotExists(tmp_path):
 			return None

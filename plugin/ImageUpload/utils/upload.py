@@ -1,20 +1,24 @@
 
-# import
+# import sublime*
+import sublime
+
+# system or core
 from qiniu import Auth, put_file, etag, urlsafe_base64_encode
 import qiniu.config
 import uuid
 from os import path, remove
 
-# Access Key /Secret Key/ import zoom name
-access_key = 'DraImie8qSbwoPoyrHV38lfTnVr9aj8S487egGsC'
-secret_key = '62PYqPKVBwFIHvObxdrzeRcqB7Ep_ufpqTXLZ_8b'
-def_host= 'http://7xsy59.com1.z0.glb.clouddn.com/'
-bucket_name = 'image'
-
 
 # method
 def upload(local_file_path, upload_file_name=None, is_delete= True):
 	'''local_file_path = local file path'''
+
+	# read settings
+	json= sublime.load_settings("ImageUpload.sublime-settings")
+	access_key = json.get("access_key")
+	secret_key = json.get("secret_key")
+	def_host= json.get("def_host")
+	bucket_name = json.get("bucket_name")
 
 	# auth
 	q = Auth(access_key, secret_key)

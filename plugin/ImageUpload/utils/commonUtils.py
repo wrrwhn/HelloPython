@@ -8,10 +8,6 @@ def formatCurTime(time_format=None):
 		time_format= '%Y%m%d%H%M%S'
 	return time.strftime(time_format)
 
-# test
-def test():
-	return '198003164013';
-
 
 # mkdir if not exits
 def mkdirIfNotExists(file_path):
