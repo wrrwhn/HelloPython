@@ -1,9 +1,5 @@
 
 # import
-import sys
-import os
-# sys.path.insert(0, os.path.dirname("C:/Python27/Lib/site-packages"))
-
 
 # method
 def getLocalImage():
@@ -48,17 +44,18 @@ def getClipboardImage():
 	im= ImageGrab.grabclipboard()
 	if isinstance(im, Image.Image):
 
+		# get im fromat
+
 		# tmp save
-		from os import getenv, path
-		import uuid
-		from ImageUpload.utils.commonUtils import mkdirIfNotExists
-		tmp_path= getenv('APPDATA')+ path.sep+ "markdown_tmp_image"+ path.sep+ str(uuid.uuid1())+ ".png"
+		from ImageUpload.utils.commonUtils import mkdirIfNotExists, getTmpImagePath
+		tmp_path= getTmpImagePath()
 		if not mkdirIfNotExists(tmp_path):
 			return None
 
 		# save & return path
 		try:
-			im.save(tmp_path)
+			tmp_path= im.save(tmp_path)
+			print(result)
 		except IOError:
 			tmp_path= None
 		finally:
